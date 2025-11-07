@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 10px;
+ }
+
+ #playing-cards::after {
+  content: "";
+  width: 180px;
+}
+
+.cards {
+justify-content: space-between;
+height: 300px;
+border: 4px solid black;
+width: 180px;
+display: flex;
+line-height: .8em
+}
+
+#playing-cards::after {
+  content: "";
+  width: 380px;              
+}
+
+
+.left {
+align-self: flex-start; 
+vertical-align: top;
+font-size: 40px;
+flex-wrap: wrap;
+line-height: .8em;
+  padding: 5px;
+
+}
+
+.middle {
+display: flex;
+align-self: center;
+flex-direction: column;
+color: red;
+font-size: 40px;
+align-items: center;
+line-height: .8em;
+ }
+
+.right {
+align-self: flex-end;
+font-size: 40px;
+line-height: .8em;
+transform: rotate(180deg);
+  padding: 5px;
+  transition: 0.3s all;
+}
+.right:hover{
+    color: blue;
+    transform: rotate(180deg)
+}
+
+span {
+transform: rotate(180deg);
+}
